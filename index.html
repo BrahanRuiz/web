@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feliz Día Mamá 💐</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <!-- Estilos de Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>💖 ¡Feliz Día Mamá! 💖</h1>
+    <p id="typewriter"></p>
+  </section>
+
+  <!-- Dedicatoria -->
+  <section class="dedicatoria">
+    <h2>Mi dedicatoria</h2>
+    <p>
+      Mamá, gracias por tu amor incondicional, por cada abrazo, por cada consejo,
+      y por enseñarme a ser quien soy. Hoy y siempre, te celebro con todo mi corazón.
+    </p>
+  </section>
+
+  <!-- Sorpresa / Carta -->
+  <section class="sorpresa">
+    <button id="btnSorpresa">🎁 Haz clic para ver mi sorpresa</button>
+    <div id="mensajeSorpresa" class="oculto">
+      <h3>💌 Una carta para ti, Mamá</h3>
+      <p style="text-align: left; max-width: 600px; margin: 0 auto;">
+        Querida Mamá,<br><br>
+        Hoy me detengo un momento para escribirte algo que muchas veces siento, pero no siempre digo.  
+        Gracias por ser mi guía, mi refugio y mi fuerza silenciosa. Por cada noche sin dormir,  
+        por cada momento que curó mi alma, y por todas las veces que creíste en mí incluso cuando yo dudaba.  
+        <br><br>
+        Tu amor ha sido mi mayor regalo y tu ejemplo, mi mayor lección.  
+        Eres mi hogar, mi raíz y mi mayor bendición.  
+        <br><br>
+        Te amo más allá de las palabras, y hoy quiero celebrarte con todo mi corazón.  
+        <br><br>
+        Con todo mi amor,<br>
+        <strong> Jordy Brahan Ruiz Huaman</strong>
+      </p>
+
+      <!-- Slider de Imágenes -->
+    <div class="slider">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="imagen1.jpeg" alt="Imagen 1"></div>
+            <div class="swiper-slide"><img src="imagen2.jpeg" alt="Imagen 2"></div>
+            <div class="swiper-slide"><img src="imagen3.jpeg" alt="Imagen 3"></div>
+            <div class="swiper-slide"><img src="imagen4.jpeg" alt="Imagen 4"></div>
+            <div class="swiper-slide"><img src="imagen5.jpeg" alt="Imagen 5"></div>
+            <div class="swiper-slide"><img src="imagen6.jpeg" alt="Imagen 6"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- Música de Fondo -->
+  <audio id="musica" autoplay muted controls>
+    <source src="madre.mp3" type="audio/mp3">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+
+  <!-- Canvas de Corazones -->
+  <canvas id="hearts"></canvas>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+
+  <!-- Lightbox -->
+ <div id="lightbox" class="lightbox hidden">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" src="" alt="Imagen ampliada">
+  </div>
+  
+
+</body>
+</html>
