@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function() {
         lightboxImg.src = img.src;
         lightbox.classList.remove('hidden');
         document.body.style.overflow = 'hidden';
-        
+        scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
         // Asegurar que la página esté al inicio
         window.scrollTo(0, 0);
         
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', function() {
       lightbox.classList.add('hidden');
       document.body.style.overflow = '';
       lightboxImg.src = ''; // Liberar la imagen
-      
+      window.scrollTo(0, scrollPosition);
       // Reactivar Swiper
       if (window.swiper) {
         swiper.allowTouchMove = true;
